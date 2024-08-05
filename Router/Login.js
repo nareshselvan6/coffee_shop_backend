@@ -1,5 +1,5 @@
 import express from "express";
-import { forgetpassword, login, register, resetpswd } from "../Controller/login.js";
+import { forgetpassword, login, register, resetpswd } from "../Controller/Logindetails.js";
 
 
 const loginrouter=express.Router();
