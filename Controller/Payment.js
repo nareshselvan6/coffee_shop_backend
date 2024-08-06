@@ -12,7 +12,6 @@ const stripe = new Stripe(stripeSecretKey, {
 
 export const payment = async (req, res) => {
     const { totalqty } = req.body;
-    console.log(totalqty);
     
 
     const success=req.headers.origin?req.headers.origin:"https://coffee-shop-frontend-vert.vercel.app/products";
