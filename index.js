@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import ConnectDB from "./Database/config.js";
 import loginrouter from "./Router/Login.js";
 import foodrouter from "./Router/route.js";
+import paymentrouter from "./Router/payment.js";
 
 const app =express();
 app.use(express.json());
@@ -17,6 +18,8 @@ ConnectDB()
 //Routes
 app.use("/auth",loginrouter)
 app.use("/fooditem",foodrouter)
+app.use("/payment",paymentrouter)
+
 
 app.get('/',(req,res)=>{
     res.status(200).send("api connection done");

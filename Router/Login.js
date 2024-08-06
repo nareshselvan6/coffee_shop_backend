@@ -7,7 +7,7 @@ const loginrouter=express.Router();
 loginrouter.post("/register",register);
 loginrouter.put("/login",login);
 loginrouter.put("/forgetpassword",forgetpassword); 
-loginrouter.put("/resetpswd",resetpswd)
+loginrouter.put("/resetpswd/:id/:token",resetpswd)
 
 
 

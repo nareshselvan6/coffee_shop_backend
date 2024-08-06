@@ -77,7 +77,7 @@ console.log(process.env.PASS_EMAIL);
 
 // link gen,
 
-const generatedlink=`https://url-shortner-frontend-three-eta.vercel.app/reset-pswrd/${user.id}/${tokengen}`
+const generatedlink=`https://coffee-shop-frontend-vert.vercel.app/resetpswrd/${user.id}/${tokengen}`
 
 
 
