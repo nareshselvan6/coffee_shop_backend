@@ -63,7 +63,7 @@ export const payment = async (req, res) => {
 
     // Debugging: Check if the environment variable and totalqty are correctly loaded
     // console.log("Stripe Secret Key Loaded:", stripeSecretKey ? "Yes" : "No");
-    // console.log("Total Quantity Received:", totalqty);
+    console.log("Total Quantity Received:", totalqty);
 
     const success = req.headers.origin
         ? req.headers.origin
